@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contCar{
+    width: 50%;
+    overflow: hidden;
+}
+
+.fondoCar{
+    width: 100%;
+    height: 100%;
+}
+
+.car{
+    position: absolute;
+    bottom: 17%;
+    left: 17%;
+    width: 60%;
+}
+
+.logoCar{
+    position: absolute;
+    left: 30px;
+    top: 65px;
+    width: 35%;
+}
+
+.carStats{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 17%;
+    color: #333;
+    column-gap: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.statImportant{
+    font-size: calc(2.3em + 2.3vw);
+    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.stat{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.medida{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.bar{
+    width: 1px;
+    height: 4em;
+    background-color: #333;
+}
+
+.divisor{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    width: 10px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.divisor div{
+    width: 20px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+@media (max-width:961px){
+    .statImportant{
+        font-size: calc(1.3em + 1.3vw);
+    }
+    .carStats{
+        flex-direction: column;
+        width: 30%;
+        right: 10px;
+        top: 5%;
+    }
+    .bar{
+        height: 1px;
+        width: 4em;
+    }
+    .logoCar{
+        width: 48%;
+    }
+}
